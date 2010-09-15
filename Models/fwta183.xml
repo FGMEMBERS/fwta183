@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+
+ <!-- Define o modelo 3d da aeronave -->
+ <path>FWTA183_007.ac</path>
+ 
+ <!-- REFERENCE / REFERENCIA
+ 
+	LIVRO
+	PAGINA DA INTERNET, ENDERECO ELETRONICO
+	COMUNIDADES, CONVERSAS
+	
+-->
+
+	<!-- O Sistema de selecao de textura -->
+	<!-- Livery System -->
+<!--
+    <nasal>
+        <load>
+            var livery_update = aircraft.livery_update.new("Aircraft/fwta183/Models/Liveries", 10);
+        </load>
+
+        <unload>
+            livery_update.stop();
+        </unload>
+    </nasal>
+ -->
+    <!-- Objetos da primeira textura --> 
+<!--
+     <animation>
+		<type>material</type>
+			<object-name>fuselage</object-name>
+			<object-name>exemplo1</object-name>
+			<object-name>exemplo2</object-name>
+			<object-name>exemplo3</object-name>
+		<property-base>sim/model/livery</property-base>
+		<texture-prop>texture</texture-prop>
+      <texture>fwta183.png</texture>
+    </animation>
+ -->    
+    <!-- Objetos da segunda textura --> 
+<!--
+     <animation>
+		<type>material</type>
+			<object-name>misc1</object-name>
+			<object-name>misc2</object-name>
+			<object-name>misc3</object-name>
+		<property-base>sim/model/miscelania</property-base>
+		<texture-prop>texture</texture-prop>
+		<texture>fwta183misc.png</texture>
+    </animation>
+-->
+<!-- Livery System -->
+
+
+<!-- ############### -->
+<!-- ### MODELOS ### -->
+<!-- ############### -->
+
+<!-- Adiciona pushback -->
+<model>
+	<name>Pushback</name>
+	<path>Models\Airport\Pushback\Military.xml</path>
+	<offsets>
+     <x-m>-3.48345 </x-m>
+     <y-m> 0       </y-m>
+     <z-m>-1.56702 </z-m>
+	</offsets>
+</model>
+
+ <!-- Servico de solo
+ <model>
+  <name>ServiceSolo</name>
+  <path>Aircraft/fwta183/Models/Service/Service_Cargo/service.xml</path>
+  <offsets>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>ServiceSolo</name>
+  <path>Aircraft/fwta183/Models/Service/Service_PAX/services.xml</path>
+  <offsets>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </offsets>
+ </model>
+  -->
+  <!-- Sombras OSG
+  <model>
+    <name>shadowOSG</name>
+    <path>Aircraft/fwta183/Models/Shadow/shadow.xml</path>
+  <offsets>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>shadowOSG</object-name>
+    <condition>
+      <equals>
+        <property>sim[0]/rendering/shadows-ai</property>
+        <value>true</value>
+      </equals>
+    </condition>
+  </animation>
+ -->
+
+<!-- ############# -->
+<!-- ## Effects ## -->
+<!-- ############# -->
+
+<!-- Tire smoke animation
+	<model>
+		<path>Aircraft/fwta183/Models/Effects/TireSmoke/tyre-smoke-nose.xml</path>
+		<name>tyre-smoke-n</name>
+		<offsets>
+			<x-m>-15.4621</x-m>
+			<y-m>0</y-m>
+			<z-m>-3.09891</z-m>
+		</offsets>
+	</model>
+	<model>
+		<path>Aircraft/fwta183/Models/Effects/TireSmoke/tyre-smoke-port.xml</path>
+		<name>tyre-smoke-p</name>
+		<offsets>
+			<x-m>1.51357</x-m>
+			<y-m>-2.95756</y-m>
+			<z-m>-3.06661</z-m>
+		</offsets>
+	</model>
+	<model>
+		<path>Aircraft/fwta183/Models/Effects/TireSmoke/tyre-smoke-stbd.xml</path>
+		<name>tyre-smoke-s</name>
+		<offsets>
+			<x-m>1.51357</x-m>
+			<y-m>2.95756</y-m>
+			<z-m>-3.06661</z-m>
+		</offsets>
+	</model>
+ -->
+
+<!-- Vortex
+
+<model>
+	<path>Aircraft/fwta183/Models/Effects/Vortex/vortex.xml</path>
+	<offsets>
+     <x-m> 5.60222</x-m>
+     <y-m>-19.0315</y-m>
+     <z-m> 5.09619</z-m>
+	</offsets>
+</model>
+<model>
+	<path>Aircraft/fwta183/Models/Effects/Vortex/vortex.xml</path>
+	<offsets>
+     <x-m> 5.60222</x-m>
+     <y-m> 19.0315</y-m>
+     <z-m> 5.09619</z-m>
+	</offsets>
+</model>
+ -->		
+<!-- Condensation
+ <model>
+  <path>Aircraft/fwta183/Models/Effects/Condensation/condensation-left.xml</path>
+   <offsets>
+     <x-m> 5.65222</x-m>
+     <y-m>-19.0315</y-m>
+     <z-m> 5.09619</z-m>
+   </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/fwta183/Models/Effects/Condensation/condensation-right.xml</path>
+   <offsets>
+     <x-m> 5.65222</x-m>
+     <y-m> 19.0315</y-m>
+     <z-m> 5.09619</z-m>
+   </offsets>
+ </model>
+ -->
+<!-- ##### Contrails ##### -->
+
+ <!-- Engine L
+ <model>
+  <path>Aircraft/fwta183/Models/Effects/Contrail/contrail.xml</path>
+   <offsets>
+     <x-m> 8.42315</x-m>
+     <y-m>-6.41707</y-m>
+     <z-m> 2.44065</z-m>
+   </offsets>
+ </model>
+ --> 		
+ <!-- Engine R
+ <model>
+  <path>Aircraft/fwta183/Models/Effects/Contrail/contrail1.xml</path>
+   <offsets>
+     <x-m> 8.42315</x-m>
+     <y-m> 6.41707</y-m>
+     <z-m> 2.44065</z-m>
+   </offsets>
+ </model>
+  -->  
+<!-- ##### Exaust effect ##### -->
+
+ <!-- Engine L --> 		
+ <model>
+  <path>Aircraft/757/Models/Effects/Exaust/Exhaust.xml</path>
+   <offsets>
+     <x-m> 7.52315</x-m>
+     <y-m>-6.41707</y-m>
+     <z-m> 2.44065</z-m>
+   </offsets>
+ </model>
+
+ <!-- Engine R -->  
+ <model>
+  <path>Aircraft/757/Models/Effects/Exaust/Exhaust.xml</path>
+   <offsets>
+     <x-m> 7.52315</x-m>
+     <y-m> 6.41707</y-m>
+     <z-m> 2.44065</z-m>
+   </offsets>
+ </model>
+
+ 
+<!-- ############ -->
+<!-- ## Lights ## -->
+<!-- ############ -->
+
+ <!-- Navegacao fuselagem acima
+ <model>
+  <path>Aircraft/fwta183/Models/Lights/beacon.xml</path>
+  <offsets>
+   <x-m>-12.2572</x-m>
+   <y-m>0</y-m>
+   <z-m>6.59359</z-m>
+  </offsets>
+ </model>
+  -->
+ <!-- Navegacao fuselagem abaixo
+ <model>
+  <path>Aircraft/fwta183/Models/Lights/beacon.xml</path>
+  <offsets>
+   <x-m>0.000</x-m>
+   <y-m>0.000</y-m>
+   <z-m>1.83103</z-m>
+  </offsets>
+ </model>
+ -->
+ <!-- Asa esquerda NAV
+ <model>
+  <path>Aircraft/fwta183/Models/Lights/RedLight.xml</path>
+  <offsets>
+   <x-m>3.88757</x-m>
+   <y-m>-19.0471</y-m>
+   <z-m>5.09619</z-m>
+  </offsets>
+ </model>
+ -->
+ <!-- Asa esquerda Strobe
+ <model>
+  <path>Aircraft/fwta183/Models/Lights/flash.xml</path>
+  <offsets>
+   <x-m>5.63915</x-m>
+   <y-m>-19.0471</y-m>
+   <z-m>5.09619</z-m>
+  </offsets>
+ </model>
+  -->
+ <!-- Asa direita NAV
+ <model>
+  <path>Aircraft/fwta183/Models/Lights/GreenLight.xml</path>
+  <offsets>
+   <x-m>3.88757</x-m>
+   <y-m> 19.0471</y-m>
+   <z-m>5.09619</z-m>
+  </offsets>
+ </model>
+  -->
+ <!-- Asa direita Strobe
+ <model>
+  <path>Aircraft/fwta183/Models/Lights/flash.xml</path>
+  <offsets>
+   <x-m>5.63915</x-m>
+   <y-m> 19.0471</y-m>
+   <z-m>5.09619</z-m>
+  </offsets>
+ </model>
+ -->
+ <!-- Trem dianteiro, landing lights
+ <model>
+  <path>Aircraft/fwta183/Models/Lights/NoseGearlight.xml</path>
+  <offsets>
+   <x-m>-19.8656</x-m>
+   <y-m>0.000000</y-m>
+   <z-m>1.21733</z-m>
+  </offsets>
+ </model> -->
+<!--
+ <model>
+  <path>Aircraft/fwta183/Models/Lights/NoseGearlight.xml</path>
+  <offsets>
+   <x-m>-15.9498</x-m>
+   <y-m> 0.0730656</y-m>
+   <z-m>-2.14223</z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/fwta183/Models/Lights/NoseGearlight.xml</path>
+  <offsets>
+   <x-m>-15.9498</x-m>
+   <y-m> 0.0730656</y-m>
+   <z-m>-2.14223</z-m>
+  </offsets>
+ </model>
+-->
+
+<!-- Landing Lights -->
+
+ <!-- Asas
+ <model>
+  <path>Aircraft/fwta183/Models/Lights/Landinglight.xml</path>
+  <offsets>
+   <x-m>-5.78708</x-m>
+   <y-m>-2.27595</y-m>
+   <z-m>3.61263</z-m>
+   <pitch-deg>0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/fwta183/Models/Lights/Landinglight.xml</path>
+  <offsets>
+   <x-m>-5.78708</x-m>
+   <y-m> 2.27595</y-m>
+   <z-m>3.61263</z-m>
+   <pitch-deg>0</pitch-deg>
+  </offsets>
+ </model>
+  -->
+ <!-- Taxi lights -->
+
+ <!-- porta dianteira janela pax
+ <model>
+  <path>Aircraft/fwta183/Models/Lights/White-light/Taxilight_little.xml</path>
+  <offsets>
+   <x-m>-10.1267</x-m>
+   <y-m>-2.14841</y-m>
+   <z-m>3.88361</z-m>
+   <pitch-deg>0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/fwta183/Models/Lights/White-light/Taxilight_little.xml</path>
+  <offsets>
+   <x-m>-10.1267</x-m>
+   <y-m> 2.14841</y-m>
+   <z-m>3.88361</z-m>
+   <pitch-deg>0</pitch-deg>
+  </offsets>
+ </model>
+  -->
+ <!-- Cauda
+ <model>
+  <path>Aircraft/fwta183/Models/Lights/flash.xml</path>
+  <offsets>
+   <x-m>22.2076</x-m>
+   <y-m> 0.00000</y-m>
+   <z-m>5.24361</z-m>
+  </offsets>
+ </model>
+		 -->
+<!-- Fim das Luzes -->
+
+
+<!-- ######### -->
+<!-- ANIMACOES -->
+<!-- ######### -->
+
+	<!-- ############### -->
+	<!--  Trem de pouso  -->
+	<!-- ############### -->
+	
+	<!-- Trem de pouso dianteiro -->
+		<!-- Mostra e esconde o trem de pouso -->			 
+		<!-- recolhe o eixo do trem e roda -->
+		
+	<!-- Trem de pouso traseiro esquerdo -->
+		<!-- Mostra e esconde o trem de pouso -->			 
+		<!-- recolhe o eixo do trem e roda -->
+	 
+	<!-- Trem de pouso traseiro direito -->
+		<!-- Mostra e esconde o trem de pouso -->			 
+		<!-- recolhe o eixo do trem e roda -->
+	 
+	<!-- Rudder -->
+
+	<!-- Elevators -->
+
+	
+	<!-- Flaps -->
+
+	
+	<!-- Iluminacao noturna -->
+		<!-- Seleciona objetos da iluminacao noturna -->
+
+		<!-- Rudder iluminado -->
+  
+		<!-- janelas dos PAX -->
+
+     
+</PropertyList>
